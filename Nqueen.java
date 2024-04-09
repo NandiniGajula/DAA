@@ -37,7 +37,7 @@ public class Nqueen{
                 if(isSafe(board,i,col))
                 {
                       board[i][col]=1;
-                      res=solveNqueen(board,col+1);
+                      res=solveNqueen(board,col+1)||res;
                       board[i][col]=0;
                  }
            }
